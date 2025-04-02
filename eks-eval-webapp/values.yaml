@@ -1,0 +1,17 @@
+appName: eks-eval-webapp
+
+port: 443
+
+configmap:
+  name: eks-eval-webapp-configmap-v1
+  data:
+    ENVIRONMENT: "production"
+    DB_USER: "ekseval"
+    DB_NAME: "ekseval"
+    DB_PORT: 5432
+    DB_HOST:
+    DB_PASSWORD:
+
+image:
+  name: pallekarlsson/eks-eval-webapp
+  tag: latest
