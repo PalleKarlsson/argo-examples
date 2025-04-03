@@ -20,7 +20,7 @@ spec:
       - name: eks-eval-webapp
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
         ports:
-        - containerPort: 443
+        - containerPort: 8080
         envFrom:
         - configMapRef:
             name: {{ .Values.configmap.name }}

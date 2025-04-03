@@ -1,6 +1,6 @@
 appName: eks-eval-webapp
 
-port: 443
+port: 8080
 
 configmap:
   name: eks-eval-webapp-configmap-v1
